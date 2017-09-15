@@ -28,9 +28,9 @@ add_action('edd_purchase_form_user_info_fields', function () {
         <input class="edd-input required" name="edd_company" id="edd-company" placeholder="<?php _e('Company Name', 'edd_cif'); ?>" value="" type="text" required>
     </p>
     <p>
-        <label class="edd-label" for="edd-vat"><?php _e('VAT', 'edd_cif'); ?><span class="edd-required-indicator">*</span></label>
+        <label class="edd-label" for="edd-vat"><?php _e('VAT', 'edd_cif'); ?> <!-- <span class="edd-required-indicator">*</span></label> -->
         <span class="edd-description"><?php _e('Your VAT for invoice', 'edd_cif'); ?></span>
-        <input class="edd-input required" name="edd_vat" id="edd-vat" placeholder="<?php _e('VAT', 'edd_cif'); ?>" value="" type="text" >
+        <input class="edd-input" name="edd_vat" id="edd-vat" placeholder="<?php _e('VAT', 'edd_cif'); ?>" value="" type="text" >
     </p>
     <p>
         <label class="edd-label" for="edd-fc"><?php _e('Fiscal code', 'edd_cif'); ?><span class="edd-required-indicator">*</span></label>
