@@ -1,10 +1,9 @@
 <?php
 /*
-  Plugin Name: EDD Checkout Invoice Fields 
-  Version: 0.1
-  Description: Add invoice extra fields in checkout page
-  Author: miziomon
-  Author URI: http://maurizio.mavida.com
+  Plugin Name: EDD Checkout Invoice Fields per UT
+  Version: 1
+  Description: Add invoice extra fields in checkout page. Based on work by Maurizio Mavida. Customized for this site by Stefano Garuti
+  Author: garubi, miziomon
  */
 
 
@@ -45,6 +44,3 @@ if (is_readable($libs)) {
         }
     }
 }
-
-
-

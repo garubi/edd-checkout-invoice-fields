@@ -13,6 +13,16 @@ add_action('edd_purchase_form_user_info_fields', function () {
 
     ?>
     <p>
+        <label class="edd-label" for="edd-tel"><?php _e('Telefono', 'edd_cif'); ?><span class="edd-required-indicator">*</span></label>
+        <span class="edd-description"><?php _e('Lo useremo solo in caso di problemi con l\'acquisto o con la tua inserzione', 'edd_cif'); ?></span>
+        <input class="edd-input required" name="edd_tel" id="edd-tel" placeholder="<?php _e('Telefono', 'edd_cif'); ?>" value="" type="text" required >
+    </p>
+	<span id="edd-anagrafica-fatturazione">
+		<legend>
+			Anagrafica fatturazione
+		</legend>
+	</span>
+	<p>
         <label class="edd-label" for="edd-company"><?php _e('Company Name', 'edd_cif'); ?><span class="edd-required-indicator">*</span></label>
         <span class="edd-description"><?php _e('The name of your company', 'edd_cif'); ?></span>
         <input class="edd-input required" name="edd_company" id="edd-company" placeholder="<?php _e('Company Name', 'edd_cif'); ?>" value="" type="text" required>
@@ -27,12 +37,6 @@ add_action('edd_purchase_form_user_info_fields', function () {
         <span class="edd-description"><?php _e('Your Fiscal code (if you are a company use your VAT)', 'edd_cif'); ?></span>
         <input class="edd-input required" name="edd_fc" id="edd-fc" placeholder="<?php _e('Fiscal code', 'edd_cif'); ?>" value="" type="text" required >
     </p>
-    <p>
-        <label class="edd-label" for="edd-address"><?php _e('Full address', 'edd_cif'); ?><span class="edd-required-indicator">*</span></label>
-        <span class="edd-description"><?php _e('Your full address with zip code and country', 'edd_cif'); ?></span>
-        <input class="edd-input required" name="edd_address" id="edd-address" placeholder="<?php _e('Full address', 'edd_cif'); ?>" value="" type="text" required>
-    </p>
-
 
     <?php
 });

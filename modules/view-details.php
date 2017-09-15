@@ -23,6 +23,7 @@ add_action('edd_payment_view_details', function ( $payment_id ) {
                 <strong><?php _e('Full address', 'edd_cif'); ?></strong>: <?php esc_attr_e($payment_meta['address']); ?><br/>
                 <strong><?php _e('VAT', 'edd_cif'); ?></strong>: <?php esc_attr_e($payment_meta['vat']); ?><br/>
                 <strong><?php _e('Fiscal code', 'edd_cif'); ?></strong>: <?php esc_attr_e($payment_meta['fc']); ?>
+                <strong><?php _e('Telefono', 'edd_cif'); ?></strong>: <?php esc_attr_e($payment_meta['tel']); ?>
             </p>
         </div>
 
@@ -30,4 +31,3 @@ add_action('edd_payment_view_details', function ( $payment_id ) {
 
     <?php
 });
-
